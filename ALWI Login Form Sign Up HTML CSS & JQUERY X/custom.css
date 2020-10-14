@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+body{
+	background: #eabebe;
+	font-family: 'arial', sans-serif;
+}
+
+.container{
+	width: 450px;
+	margin: 100px auto;
+}
+
+.signup,
+.login{
+	width: 50%;
+	background: white;
+	/*reload*/
+	border-bottom: none;
+	border-radius: 10px 10px 0 0;
+	height: 60px;
+	float: left;
+	font-weight: bold;
+	text-align: center;
+	/*reload*/
+	line-height: 60px;
+	/*reload*/
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.create{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	/*reload*/
+	margin-top: 85px;
+	/*reload*/
+	cursor: pointer;
+}
+
+#not{
+	margin-top: 7em;
+}
+
+.create:hover,
+.forgot:hover{
+	color: blue;
+}
+
+.signup-form,
+.login-form{
+	background: white;
+	box-sizing: border-box;
+	border-top: none;
+	padding: 40px;
+	/*reload*/
+	clear: both;
+	width: 100%;
+	height: 400px;
+}
+
+.input{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-bottom: 15px;
+	/*reload*/
+	border: 2px solid #e9eaea;
+	outline: none;
+	font-size: 14px;
+	/*reload*/
+	transition: all 1s ease;
+}
+
+.input:focus{
+	border: 2px solid #ff5a88;
+}
+
+.btn-create,
+.btn-login{
+	width: 100%;
+	background: #34b4a0;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	text-transform: uppercase;
+	/*reload*/
+	font-weight: bold;
+	/*reload*/
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-bottom: 30px;
+	transition: all .5s ease;
+}
+
+.btn-create:hover,
+.btn-login:hover{
+	background: #eabebe;
+}
+
+span a{
+	text-decoration: none;
+	color: #000;
+}
