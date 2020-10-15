@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Login Form Using Jquery</title>
+	<link rel="stylesheet" href="custom.css">
+</head>
+<body>
+	<div class="container">
+		<div class="signup">Sign Up</div>
+		<div class="login">Login</div>
+
+		<div class="signup-form">
+			<input type="text" name="" value="" placeholder="Your Email Address" class="input"><br>
+			<input type="text" name="" value="" placeholder="Username" class="input"><br>
+			<input type="password" name="" value="" placeholder="Password" class="input"><br>
+			<!-- reload -->
+			<div class="btn-create">
+				Create Account
+			</div>
+			<p class="create" id="have">I have an Account</p>
+		</div>
+
+		<div class="login-form">
+			<input type="email" name="" value="" placeholder="Email / Username" class="input"><br>
+			<!-- reload -->
+			<input type="password" name="" value="" placeholder="Password" class="input"><br>
+			<div class="btn-login">
+				Login
+			</div>
+			<span><a href="#" class="forgot">I Forgot my Username / Password</a></span>
+			<p class="create" id="not">I dont have an Account</p>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".login-form").hide();
+		$(".login").css("background", "none");
+		$(".login").css("border", "none");
+		$(".login").css("font-weight", "normal");
+
+		$(".login").click(function(){
+			$(".signup-form").hide();
+			$(".login-form").show();
+			$(".signup").css("background", "none");
+			$(".signup").css("border", "none");
+			$(".login").css("background", "white");
+			$(".login").css("font-weight", "bold");
+			$(".signup").css("font-weight", "normal");
+		});
+
+		$(".signup").click(function(){
+			$(".signup-form").show();
+			$(".login-form").hide();
+			$(".login").css("background", "none");
+			$(".login").css("border", "none");
+			$(".signup").css("background", "white");
+			$(".signup").css("font-weight", "bold");
+			$(".login").css("font-weight", "normal");
+		});
+
+		$(".btn-create, .btn-login").click(function() {
+			$(".input").val("");
+		});
+
+		$("#not").click(function() {
+			$(".signup-form").show();
+			$(".login-form").hide();
+			$(".login").css("background", "none");
+			$(".login").css("border", "none");
+			$(".signup").css("background", "white");
+			$(".signup").css("font-weight", "bold");
+			$(".login").css("font-weight", "normal");
+		});
+
+		$("#have").click(function() {
+			$(".signup-form").hide();
+			$(".login-form").show();
+			$(".signup").css("background", "none");
+			$(".signup").css("border", "none");
+			$(".login").css("background", "white");
+			$(".login").css("font-weight", "bold");
+			$(".signup").css("font-weight", "normal");
+		});
+		
+	});
+</script>
+</html>
